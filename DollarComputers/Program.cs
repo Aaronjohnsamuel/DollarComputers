@@ -6,17 +6,32 @@ using System.Windows.Forms;
 
 namespace DollarComputers
 {
-    static class Program
+    public static class Program
     {
+        public static SplashScreen MySplashScreen;
+
+        public static StartForm MyStartForm;
+
+        public static SelectForm MySelectForm;
+
+        public static ProductInfoForm MyProductInfoForm;
+
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            Program.MySplashScreen = new SplashScreen();
+            Program.MyStartForm = new StartForm();
+            Program.MySelectForm = new SelectForm();
+            Program.MyProductInfoForm = new ProductInfoForm();
+
+            Application.Run(Program.MySplashScreen);
         }
     }
 }

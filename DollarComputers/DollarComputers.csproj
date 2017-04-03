@@ -46,14 +46,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Computer.cs" />
+    <Compile Include="DollorComputersDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DollorComputersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DollorComputersDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DollorComputersDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ProductInfoForm.Designer.cs">
+      <DependentUpon>ProductInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectForm.Designer.cs">
+      <DependentUpon>SelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ProductInfoForm.resx">
+      <DependentUpon>ProductInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectForm.resx">
+      <DependentUpon>SelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +105,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DollorComputersDataSet.xsc">
+      <DependentUpon>DollorComputersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DollorComputersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DollorComputersDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DollorComputersDataSet.xss">
+      <DependentUpon>DollorComputersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DollorComputersDataSet1.xsc">
+      <DependentUpon>DollorComputersDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DollorComputersDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DollorComputersDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DollorComputersDataSet1.xss">
+      <DependentUpon>DollorComputersDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
